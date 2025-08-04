@@ -1,0 +1,25 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+  justify-content: center;
+  padding-left: 3%; 
+  padding-bottom: 2%;
+}
+.title{
+    text-align: center;
+    font-size: large;
+    margin-top: 3%;
+    margin-right: 7%;
+    margin-bottom: 3%;
+    font-weight:500;
+}
+.btn{  
+  display: table-cell;
+  justify-content: center;
+  padding-left: 3%;
+  margin-left: 40%;
+  background-color: blue;
+}
+

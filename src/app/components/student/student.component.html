@@ -1,0 +1,50 @@
+<div class="container">
+    <mat-card-actions>
+        <button mat-raised-button style="background-color:cyan" class="btn" (click)="click()">Add New Student</button>
+    </mat-card-actions>
+    <div [hidden]="display">
+        <mat-card class="example-card" appearance="outlined">
+            <mat-card-header>
+                <mat-card-title>Add Student</mat-card-title>
+            </mat-card-header>
+        
+            <mat-card-content>
+                <form (ngSubmit)="onSubmit()" [formGroup]="studentForm">
+                    <mat-form-field>
+                        <mat-label>Student Name</mat-label>
+                        <input matInput placeholder="Enter Student Name" formControlName="name">
+                        <br>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                        <mat-label>Student College</mat-label>
+                        <input matInput  placeholder="Enter Student College" formControlName="college">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                        <mat-label>Student Marks</mat-label>
+                        <input matInput  placeholder="Enter Student Marks" formControlName="marks">
+                    </mat-form-field>
+                    <br>
+                    <button mat-raised-button type="submit" style="background-color: cadetblue;">Add</button>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+<div>
+    <br>
+    <h3>Student Information</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>College</th>
+            <th>Marks</th>
+        </tr>
+        <tr *ngFor="let student of students">
+            <td>{{student.name}}</td>
+            <td>{{student.college}}</td>
+            <td>{{student.marks}}</td>
+        </tr>
+    </table>
+</div>
+</div>
