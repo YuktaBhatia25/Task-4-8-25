@@ -20,6 +20,11 @@
   justify-content: center;
   padding-left: 3%;
   margin-left: 40%;
-  background-color: blue;
 }
+
+.formfields{
+    padding-left: auto;
+    padding-right: 4%;
+}
+
 
